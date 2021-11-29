@@ -1,0 +1,296 @@
+/*Hello and welcome to my code*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(29, 29, 34);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*       The typography of the page       */
+
+
+/*The navbar &&&&&&&&&*/
+#navbar{
+    background-color: rgba(238, 226, 226, 0.1);
+    position: fixed;
+    overflow-x:hidden;
+    width: 100%;
+    outline: none;
+    top: 0px;
+    right: 0px;
+    
+}
+
+#navbar a{
+    font:500 2rem "Raleway";
+    color: rgb(240, 85, 85);
+    text-decoration: none;
+    display: block;
+    float:right;
+    padding:5px 10px 5px 10px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+
+#navbar a:hover{
+    color: rgba(243, 13, 13, 0.9);
+
+}
+#nav a:focus{
+    color: red;
+}
+
+/*container for the remaining div*/
+#content{
+    margin-top:45px;
+   
+}
+
+.text{
+    font-size:2rem;
+}
+
+
+
+/*            welcome section        */
+
+#welcome-section{
+    background:linear-gradient(to right, rgb(73, 71, 71), rgb(37, 37, 37)); ;
+    height: 120vh;
+    text-align: center;
+    
+
+}
+
+/*   the  H1    &&&*/
+h1{
+    margin-bottom: 0px;
+    padding-top: 90px;
+    padding-bottom:0;
+    font-size: 3.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(199, 235, 0);
+
+}
+#welcome-section p{
+    font-size: 1.5rem;
+    letter-spacing: 0.5em;
+}
+
+
+/*      PROJECTS ...SECTION................*/
+#projects{
+    width: 100%;
+    height: 150vh;
+    text-align: center;
+    position: relative;
+}
+
+#projects-h2{
+    font-size: 1.8rem;
+    color:rgb(90, 199, 226);
+    text-decoration:underline;
+    outline: none;
+    overflow: hidden;
+    letter-spacing: 0.1em;
+}
+
+
+/*      Projects tiles        */
+.project-tile{
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.tile-1{
+    display: flex;
+    margin-top: 70px;
+   
+}
+
+.img-container{
+   border: 2px solid black;
+   overflow: hidden;
+   outline: none;
+   margin-left: 8px;
+   background-color: black;
+   
+}   
+
+
+
+
+
+/*         tile 2 img grid  */
+.tile-2{
+    display: flex;
+    margin-top: 80px;
+}
+
+.img2-container{
+    border: 2px solid black;
+   overflow: hidden;
+   outline: none;
+   margin-left: 8px;
+   background-color: black;
+
+}
+
+
+.pro{
+    width: 100%;
+    padding: 5px 10px 0px 10px;
+    margin-bottom:0;
+    cursor: pointer;
+    
+}
+/*          the images styling      */
+/*      img-text            */
+.img-text{
+    display: inline-block;
+    padding:0 ;
+    font:300 2rem "Raleway";
+    letter-spacing: 0.5em;
+    margin:0px;
+    width: 100%;
+    background-color: black;
+    cursor:pointer;
+}
+
+
+/*the button to show all the link on github*/
+
+#showAll{
+    width: 100%;
+    border: none;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    left: 0px;
+    bottom: 0px;
+    background-color:black;
+    color: rgba(228,227,227,0.2);
+    border-radius: 11px;
+    cursor: pointer;
+    
+}
+#showAll:hover{
+    color: rgba(228,228,228,0.9);
+}
+
+
+
+/*             footer                      */
+#footer{
+    text-align: center;
+    background:linear-gradient(to right, rgb(73, 71, 71), rgb(37, 37, 37)); 
+    height: 80vh;
+    position: relative;
+}
+
+#footer-text{
+    padding-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.06em;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+#footer-text h2{
+    color: yellow;
+    font-weight: 900;
+    
+}
+#footer-text p{
+    color: rgba(223, 223, 58,0.4);
+    
+}
+
+
+/*          social media icons and text     */
+#social-media{
+   display: flex;
+   padding-left: 50px;
+   justify-content: center;
+   align-items:baseline;
+   text-align: center;
+
+}
+
+.im-txt{
+    font:400 1.5rem "Raleway";
+}
+
+.iconic{
+    padding: 10px 15px 10px 10px;
+}
+
+.icons{
+    width: 50px;
+    align-items: center;
+    padding: 0;
+}
+
+
+/*           end  Note                    */
+
+#end-text{
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    font-size: 1rem;
+    
+  
+    
+}
+.p1{
+   position: absolute;
+   left: 0px;
+   bottom: 0px;
+   letter-spacing: 0.01em;
+   
+}
+.p2{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
