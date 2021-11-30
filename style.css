@@ -2,23 +2,59 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    
 }
 
 body{
-    background-color: rgb(29, 29, 34);
+    background-color: rgba(18, 18, 19,0.1);
     color: white;
     margin: 0;
     padding: 0;
+}
+body,html{
+    height: 50%;
+}
+
+.parallax{
+    background-image: url(./img/brian.png);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:300px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.parallax2{
+    background-image: url(./img/brian.png);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:500px;
+    padding: 0;
+    margin: 0;
+
+}
+.parallax3{
+    background-image: url(./img/brian.png);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:600px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 
 /*       The typography of the page       */
 
 
-/*The navbar &&&&&&&&&*/
+/*   The navbar &&&&&&&&&*/
 #navbar{
-    background-color: rgba(238, 226, 226, 0.1);
+    background-color: rgba(14, 13, 13, 0.4);
     position: fixed;
     overflow-x:hidden;
     width: 100%;
@@ -30,11 +66,11 @@ body{
 
 #navbar a{
     font:500 2rem "Raleway";
-    color: rgb(240, 85, 85);
+    color: rgba(240, 85, 85,0.9);
     text-decoration: none;
     display: block;
     float:right;
-    padding:5px 10px 5px 10px;
+    padding:0px 10px 5px 10px;
     letter-spacing: 0.02em;
     text-align: center;
 
@@ -50,10 +86,6 @@ body{
 }
 
 /*container for the remaining div*/
-#content{
-    margin-top:45px;
-   
-}
 
 .text{
     font-size:2rem;
@@ -64,7 +96,7 @@ body{
 /*            welcome section        */
 
 #welcome-section{
-    background:linear-gradient(to right, rgb(73, 71, 71), rgb(37, 37, 37)); ;
+    background:linear-gradient(to right, rgb(73, 71, 71), rgba(37, 37, 37)); 
     height: 120vh;
     text-align: center;
     
@@ -81,26 +113,80 @@ h1{
     color:rgb(199, 235, 0);
 
 }
-#welcome-section p{
+#welcome-p{
     font-size: 1.5rem;
     letter-spacing: 0.5em;
+   
 }
+
+/*    the about me image and text styling */
+.self{
+    display: block;
+    margin-top: 60px;
+    position: relative;
+}
+
+.info-img{
+    width: 35%;
+    height: 50px;
+    float :left;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+#pic-info{
+    width: 180px;
+    height: 270px; 
+    border-radius: 25%;
+    user-select: none;
+    border:2px solid  black;
+    cursor: pointer;
+   
+}
+
+.info-txt{
+    width: 60%;
+    float: right;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-size: 1.5rem;
+}
+
+/*               Skill          Ware  */
+
+
+
+.block{
+    display: inline-block;
+    width: 80%;
+    height: 20px;
+    border: 2px solid red;
+    padding-right:10px;
+}
+
+.skills{
+    width: 30px;
+    padding-top: 17px;
+   ;
+    
+}
+
 
 
 /*      PROJECTS ...SECTION................*/
 #projects{
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     text-align: center;
     position: relative;
+    background:linear-gradient(to right, rgb(73, 71, 71), rgba(37, 37, 37));
+   
 }
 
 #projects-h2{
     font-size: 1.8rem;
-    color:rgb(90, 199, 226);
     text-decoration:underline;
-    outline: none;
-    overflow: hidden;
     letter-spacing: 0.1em;
 }
 
@@ -109,13 +195,15 @@ h1{
 .project-tile{
     width: 100%;
     text-align: center;
+    
 
 }
 
 
 .tile-1{
     display: flex;
-    margin-top: 70px;
+    margin-top: 30px;
+   
    
 }
 
@@ -135,7 +223,7 @@ h1{
 /*         tile 2 img grid  */
 .tile-2{
     display: flex;
-    margin-top: 80px;
+   margin-top: 30px;
 }
 
 .img2-container{
@@ -161,7 +249,7 @@ h1{
     display: inline-block;
     padding:0 ;
     font:300 2rem "Raleway";
-    letter-spacing: 0.5em;
+    letter-spacing: 0.02em;
     margin:0px;
     width: 100%;
     background-color: black;
@@ -177,10 +265,10 @@ h1{
     position: absolute;
     text-align: center;
     font-size: 2rem;
-    left: 0px;
+    left: 0;
     bottom: 0px;
     background-color:black;
-    color: rgba(228,227,227,0.2);
+    color: rgb(228,227,227);
     border-radius: 11px;
     cursor: pointer;
     
@@ -195,7 +283,7 @@ h1{
 #footer{
     text-align: center;
     background:linear-gradient(to right, rgb(73, 71, 71), rgb(37, 37, 37)); 
-    height: 80vh;
+    height: 55vh;
     position: relative;
 }
 
@@ -204,7 +292,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.06em;
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #footer-text h2{
@@ -229,11 +317,11 @@ h1{
 }
 
 .im-txt{
-    font:400 1.5rem "Raleway";
+    font:200 1.2rem "Raleway";
 }
 
 .iconic{
-    padding: 10px 15px 10px 10px;
+    padding: 2px;
 }
 
 .icons{
@@ -274,6 +362,11 @@ h1{
 
 
 
+/*             Media-----Queries       */
+@media screen and (max-width:600px){
+
+
+}
 
 
 
